@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+        <style type="text/css">
+            body {
+                color:rgb(14, 14, 14);
+                background-color: gray;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .caja-texto {
+                background-color:#B0BAC3 ;
+                width: 50%;
+
+            }
+
+        </style>
+        <body>
+            <h1>Ejercicio 12</h1>
+                <div class="caja-texto">
+                    <script>
+
+                        var valorHora = parseFloat(prompt('¿Cuál es tu valor hora?'));
+                        var horasTrabajadas = parseFloat(prompt('¿Cuántas horas trabajaste este mes?'));
+                        
+                        var sueldoMensual = valorHora * horasTrabajadas ;
+
+                        document.write(`Tu sueldo este mes es de $${sueldoMensual}`);
+
+                    </script>
+                </div>
+
