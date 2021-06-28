@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+
+    background-color: #F6F8EB;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    display: block;
+    color: #000000;
+    padding: 20px;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{
+    color: #60A9FC;
+    transition: 0.5s;
+    
+}
+
+
+
+.titulo-home {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 60px;
+}
+.seccion {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.portada {
+    background-image: url(../imagenes/boston_foto.jpeg);
+    background-repeat: no-repeat;
+    height: 750px;
+    width: 700%;
+    opacity: 0.9;
+    overflow: hidden;
+
+}
+
+.portada h1 {
+    position: absolute;
+    margin-bottom: 150px;
+    margin-top: 200px;
+    left: 450px;
+    font-size: 80px;
+    font-family: 'Didact Gothic', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+
+
+.box {
+    width: 33%;
+    height: 50vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    border-radius: 10px;
+
+
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.box .texto-imagen-hover{
+    width: 0%;
+    height: 50vh;
+    color: black;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .4s all;
+    opacity: 1;
+}
+
+.texto-imagen-hover h3{
+    color:#000000;
+    font-size: 20px;
+
+}
+
+.box:hover .texto-imagen-hover{
+    width: 100%;
+}
+
+
+ 
+.explora {
+    width:100%;
+    max-width: 1000px;
+    margin:auto;
+    padding: 60px;
+    margin-top: 100px;
+    border-top: 2px solid #171E45;
+}
+
+.titulo-explora{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.explora img{
+    width:500px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+}
+
+.explora p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contenedor-mapa{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-hoteles{
+    background-image: url(../imagenes/hotel.png);
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    justify-content: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+    
+.seccionGuia {
+    margin: 70px, 0, 70px, 0;
+    display: block;
+
+}
+.seccionGuiacontenedor2 {
+    justify-content: center;
+
+}
+.seccionGuiacontenedor2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 14px;
+}
+
+.derecha {
+    display: flex;
+}
+
+.guias {
+    position: relative;
+    width: 360px;
+    margin: 40px 30px 40px 30px;
+
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#3E458D;
+    overflow: hidden;
+    width: 300px;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 0 0 14px 14px;
+    opacity: 90%;
+}
+
+.guias:hover .overlay {
+    height: 40%;
+    width: 300px;
+}
+.text {
+color: #FFFFFF;
+position: absolute;
+top: 45%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+.text a {
+    color: rgb(141, 243, 141);
+}
+
+.seccionGuia h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.info {
+    width: 270px;
+    height: 270px;
+    background-color: black;
+    transition: 0.2s;
+    opacity: 0;
+    border-radius: 30px;
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;  
+
+
+}
+
+.info a{
+    display: flex;
+    justify-content: center;
+    color:rgb(241, 86, 80);
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 120px;
+}
+
+.contenedor-hoteles:hover .info{
+    opacity: 0.5;
+
+}
+
+.contenedor-excursiones{
+    background-image: url(../imagenes/excursiones.jpg);
+    width: 270px;
+    height: 270px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+.contenedor-excursiones:hover .info{
+    opacity: 0.5;
+
+}
+
+
+.contenedor-gastronomía{
+    background-image: url(../imagenes/restaurante.jpg);
+    opacity: 0.9;
+    width: 270px;
+    height: 270px;
+    margin: 30px;
+    border-radius: 30px; 
+}
+
+.contenedor-gastronomía:hover .info{
+    opacity: 0.5;
+
+}
+
+.contenedor-paquetes{
+    background-image: url(../imagenes/beacon_hill2.jpg);
+    opacity: 0.9;
+    width: 270px;
+    height: 270px;
+    margin: 30px;
+    border-radius: 30px;   
+}
+
+.contenedor-paquetes:hover .info{
+    opacity: 0.5;
+
+}
+
+.item {
+    float: left;
+
+}
+
+.container-general{
+    overflow: hidden;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.el-footer {
+    width: 100%;
+    height: 200px;
+    background: #242582;
+}
+
+
+.footer-per-se{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.footer-per-se h3{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: rgb(241, 86, 80);
+}
+
+.segundo-p{
+    margin-top: 25px;
+}
