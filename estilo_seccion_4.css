@@ -1,0 +1,494 @@
+@media screen and (max-width: 1920px) and (min-width: 1000px) {
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+
+    background-image: url(../imagenes/citypass.jpg);
+    background-repeat:none;
+    background-blend-mode:darken;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 10px;
+
+    text-align: center;
+}
+
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu ul li a {
+    display: block;
+    color: #000000;
+    padding: 20px;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{
+    color: #7117e7;
+    transition: 0.5s;
+    
+}
+
+.container {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.container .form .form-header {
+    font-weight: normal;
+
+}
+
+.container .form {
+    background: rgb(77, 77, 77);
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    padding: 50px 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+
+.container .form .form-label {
+    display: block;
+    color: #c7c7c7;
+    font-size: 30px;
+    position: relative;
+
+    padding: 10px;
+}
+
+.container .form .form-input .form-textarea {
+    background: rgba(226, 226, 226, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 5px solid #afafaf;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.container .form .form-input {
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 5px solid #000000;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.container .form .form-textarea{
+    resize: vertical;
+    height: 200px;
+    width: 90%;
+    background-color:rgb(228, 228, 228);
+}
+
+}
+
+/* -------------- MOBILE ----------------------------------- */
+@media screen and (max-width: 480px) and (min-width: 200px) {
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    body {
+        font-family: 'Didact Gothic', sans-serif;
+    
+        background-image: url(../imagenes/citypass.jpg);
+        background-repeat:no-repeat;
+    }
+    
+    h1 {
+        font-size: 50px;
+        margin: 10px;
+    
+        text-align: center;
+    }
+    
+    
+    #menu {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 100%;
+    
+    }
+    
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #menu ul li {
+        display: inline-block;
+    }
+    
+    #menu ul li a {
+        display: block;
+        color: #000000;
+        padding: 20px;
+        text-decoration: none;
+    }
+    
+    #menu ul li a:hover{
+        color: #7117e7;
+        transition: 0.5s;
+        
+    }
+    
+    .container {
+        margin-top: 30px;
+    
+        display: flex;
+        justify-content: center;
+    
+        padding: 20px;
+    }
+    
+    .container .form .form-header {
+        font-weight: normal;
+    
+    }
+    
+    .container .form {
+        background: rgb(77, 77, 77);
+        width: 700px;
+        height: 700px;
+        margin: auto;
+        padding: 50px 30px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 10px;
+    }
+    
+    
+    .container .form .form-label {
+        display: block;
+        color: #c7c7c7;
+        font-size: 30px;
+        position: relative;
+    
+        padding: 10px;
+    }
+    
+    .container .form .form-input .form-textarea {
+        background: rgba(226, 226, 226, 0.7);
+        border: none;
+        outline: none;
+        border-bottom: 5px solid #afafaf;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    .container .form .form-input {
+        background: rgba(0,0,0,.7);
+        border: none;
+        outline: none;
+        border-bottom: 5px solid #000000;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    .container .form .form-textarea{
+        resize: vertical;
+        height: 200px;
+        width: 90%;
+        background-color:rgb(228, 228, 228);
+    }
+  
+}
+
+@media screen and (max-width: 1000px) and (min-width: 480px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    body {
+        font-family: 'Didact Gothic', sans-serif;
+    
+        background-image: url(../imagenes/citypass.jpg);
+        background-repeat:none;
+        background-blend-mode:darken;
+    }
+    
+    h1 {
+        font-size: 50px;
+        margin: 10px;
+    
+        text-align: center;
+    }
+    
+    
+    #menu {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 100%;
+    
+    }
+    
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #menu ul li {
+        display: inline-block;
+    }
+    
+    #menu ul li a {
+        display: block;
+        color: #000000;
+        padding: 20px;
+        text-decoration: none;
+    }
+    
+    #menu ul li a:hover{
+        color: #7117e7;
+        transition: 0.5s;
+        
+    }
+    
+    .container {
+        margin-top: 30px;
+    
+        display: flex;
+        justify-content: center;
+    
+        padding: 20px;
+    }
+    
+    .container .form .form-header {
+        font-weight: normal;
+    
+    }
+    
+    .container .form {
+        background: rgb(77, 77, 77);
+        width: 700px;
+        height: 700px;
+        margin: auto;
+        padding: 50px 30px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 10px;
+    }
+    
+    
+    .container .form .form-label {
+        display: block;
+        color: #c7c7c7;
+        font-size: 30px;
+        position: relative;
+    
+        padding: 10px;
+    }
+    
+    .container .form .form-input .form-textarea {
+        background: rgba(226, 226, 226, 0.7);
+        border: none;
+        outline: none;
+        border-bottom: 5px solid #afafaf;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    .container .form .form-input {
+        background: rgba(0,0,0,.7);
+        border: none;
+        outline: none;
+        border-bottom: 5px solid #000000;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    .container .form .form-textarea{
+        resize: vertical;
+        height: 200px;
+        width: 90%;
+        background-color:rgb(228, 228, 228);
+    }
+    
+    }
+    
+    /* -------------- MOBILE ----------------------------------- */
+    @media screen and (max-width: 480px) and (min-width: 200px) {
+    
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+        body {
+            font-family: 'Didact Gothic', sans-serif;
+        
+            background-image: url(../imagenes/citypass.jpg);
+            background-repeat:no-repeat;
+        }
+        
+        h1 {
+            font-size: 50px;
+            margin: 10px;
+        
+            text-align: center;
+        }
+        
+        
+        #menu {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            width: 100%;
+        
+        }
+        
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #menu ul li {
+            display: inline-block;
+        }
+        
+        #menu ul li a {
+            display: block;
+            color: #000000;
+            padding: 20px;
+            text-decoration: none;
+        }
+        
+        #menu ul li a:hover{
+            color: #7117e7;
+            transition: 0.5s;
+            
+        }
+        
+        .container {
+            margin-top: 30px;
+        
+            display: flex;
+            justify-content: center;
+        
+            padding: 20px;
+        }
+        
+        .container .form .form-header {
+            font-weight: normal;
+        
+        }
+        
+        .container .form {
+            background: rgb(77, 77, 77);
+            width: 700px;
+            height: 700px;
+            margin: auto;
+            padding: 50px 30px;
+            margin-top: 30px;
+            padding-bottom: 30px;
+            border-radius: 10px;
+        }
+        
+        
+        .container .form .form-label {
+            display: block;
+            color: #c7c7c7;
+            font-size: 30px;
+            position: relative;
+        
+            padding: 10px;
+        }
+        
+        .container .form .form-input .form-textarea {
+            background: rgba(226, 226, 226, 0.7);
+            border: none;
+            outline: none;
+            border-bottom: 5px solid #afafaf;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        
+        .container .form .form-input {
+            background: rgba(0,0,0,.7);
+            border: none;
+            outline: none;
+            border-bottom: 5px solid #000000;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        
+        .container .form .form-textarea{
+            resize: vertical;
+            height: 200px;
+            width: 90%;
+            background-color:rgb(228, 228, 228);
+        }
+      
+    }
+  

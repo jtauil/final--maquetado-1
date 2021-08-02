@@ -1,8 +1,585 @@
-*{
+/* --------------------------- MOBILE (landscape y vertical) -------------------------- */
+
+
+@media screen and (min-width: 320px) and (orientation: landscape)
+{
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
+    body {
+        font-family: 'Didact Gothic', sans-serif;
+    
+        background-color: #F6F8EB;
+    }
+    
+    
+    #menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    
+    }
+    
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #menu ul li {
+        display: inline-block;
+    }
+    
+    #menu ul li a {
+        display: block;
+        color: #000000;
+        padding: 20px;
+        text-decoration: none;
+    }
+    
+    #menu ul li a:hover{
+        color: #7117e7;
+        transition: 0.5s;
+        
+    }
+    
+    
+    
+    .titulo-home {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .seccion {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .portada {
+        background-image: url(../imagenes/boston_foto.jpeg);
+        background-repeat: no-repeat;
+        height: 750px;
+        width: 100%;
+        opacity: 0.9;
+        overflow: hidden;
+    
+    }
+    
+    .portada h1 {
+        position: absolute;
+        margin-bottom: 150px;
+        margin-top: 200px;
+        left: 450px;
+        font-size: 80px;
+        font-family: 'Didact Gothic', sans-serif;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    
+    }
+    
+    
+    .box {
+        width: 33%;
+        height: 50vh;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        margin: 1.5%;
+        border-radius: 10px;
+    
+    
+    }
+    
+    .box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    
+    }
+    
+    .box .texto-imagen-hover{
+        width: 0%;
+        height: 50vh;
+        color: black;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: .4s all;
+        opacity: 1;
+    }
+    
+    .texto-imagen-hover h3{
+        color:#000000;
+        font-size: 20px;
+    
+    }
+    
+    .box:hover .texto-imagen-hover{
+        width: 100%;
+    }
+    
+    
+     
+    .explora {
+        width:100%;
+        max-width: 1000px;
+        margin:auto;
+        padding: 60px;
+        margin-top: 100px;
+        border-top: 2px solid #171E45;
+    }
+    
+    .titulo-explora{
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .explora img{
+        width:500px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    
+    }
+    
+    .explora p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    .contenedor-mapa{
+        display: flex;
+        justify-content: center;
+    }
+    
+        
+    .seccionGuia {
+        margin: 70px, 0, 70px, 0;
+        display: block;
+    
+    }
+    .contenedor-guias {
+      display: flex;
+      justify-content: center;
+    }
+    .contenedor-guias img {
+        width: 200px;
+        height: 200px;
+        border-radius: 14px;
+        margin-left: 20px;
+        margin-left: 20px;
+    }
+    
+     .caja {
+        display: flex;
+    }
+    
+    .guias {
+        position: relative;
+        width: 300px;
+        margin: 40px 30px 40px 30px;
+        padding: 30px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color:#3E458D;
+        overflow: hidden;
+        width: 300px;
+        height: 0;
+        transition: .5s ease;
+        border-radius: 0 0 14px 14px;
+        opacity: 90%;
+    }
+    
+    .guias:hover .overlay {
+        height: 40%;
+        width: 300px;
+    }
+    
+    
+    .text {
+    color: #FFFFFF;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+    .text a {
+        color: rgb(141, 243, 141);
+    }
+    
+    .seccionGuia h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .info {
+        width: 270px;
+        height: 270px;
+        background-color: black;
+        transition: 0.2s;
+        opacity: 0;
+        border-radius: 30px;
+        overflow: hidden;
+        display: table-cell;
+        vertical-align: middle;  
+    
+    
+    }
+    
+    .info a{
+        display: flex;
+        justify-content: center;
+        color:rgb(241, 86, 80);
+        text-transform: capitalize;
+        font-weight: bold;
+        margin-top: 120px;
+    }
+    
+    .contenedor-hoteles:hover .info{
+        opacity: 0.5;
+    
+    }
+    
+    .contenedor-excursiones{
+        width: 270px;
+        height: 270px;
+        margin: 30px;
+        border-radius: 30px;
+    }
+    
+    .contenedor-excursiones:hover .info{
+        opacity: 0.5;
+    
+    }
+    
+    
+    .contenedor-gastronomía{
+        opacity: 0.9;
+        width: 270px;
+        height: 270px;
+        margin: 30px;
+        border-radius: 30px; 
+    }
+    
+    .contenedor-gastronomía:hover .info{
+        opacity: 0.5;
+    
+    }
+    
+    .contenedor-paquetes{
+        opacity: 0.9;
+        width: 270px;
+        height: 270px;
+        margin: 30px;
+        border-radius: 30px;   
+    }
+    
+    .contenedor-paquetes:hover .info{
+        opacity: 0.5;
+    
+    }
+    
+    .item {
+        float: left;
+    
+    }
+    
+    .container-general{
+        overflow: hidden;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .el-footer {
+        width: 100%;
+        height: 200px;
+        background: #b0b1e7;
+    }
+    
+    
+    .footer-per-se{
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+    
+    .footer-per-se h3{
+        margin-top: 100px;
+        margin-bottom: 10px;
+        color: rgb(87, 45, 240);
+    }
+    
+    .segundo-p{
+        margin-top: 25px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+        
+        body {
+            font-family: 'Didact Gothic', sans-serif;
+        
+            background-color: #F6F8EB;
+        }
+        
+        #menu {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            flex-basis: 100px;
+            background-color:#F6F8EB;
+        
+        }
+        
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #menu ul li {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            flex-basis: 100px;
+            background-color: #F6F8EB;
+        }
+        
+        #menu ul li a {
+            display: block;
+            color: #000000;
+            padding: 10px;
+            text-decoration: none;
+        }
+        
+            
+        .portada {
+        background-image: url(../imagenes/boston_foto.jpeg);
+        background-repeat: no-repeat;
+        background-size: 580px;
+        height: 300px;
+        width: 100%;
+        opacity: 0.9;
+        overflow: hidden;
+        }
+       
+        .portada h1 {
+            position: absolute;
+            margin-bottom: 5px;
+            margin-top: 200px;
+            left:300px;
+            font-size: 30px;
+            font-family: 'Didact Gothic', sans-serif;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        
+        }
+      
+        .explora {
+            width:100%;
+            max-width: 580px;
+            margin:auto;
+            padding: 60px;
+            margin-top: 100px;
+            border-top: 2px solid #171E45;
+        }
+        
+        .titulo-explora{
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .explora img{
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+        
+        }
+        
+        .explora p{
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+
+        .box {
+           display: none;
+        
+        }
+        
+
+        
+        .contenedor-mapa{
+            display: flex;
+            justify-content: center;
+        }
+
+        /* ------------- sección explorá la ciudad  mobile ------------- */
+
+        .seccionGuia {
+            display: none;
+        
+        }
+        
+        
+        
+        .el-footer {
+            width: 100%;
+            height: 200px;
+            background: #b0b1e7;
+        }
+        
+        
+        .footer-per-se{
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: auto;
+            
+        }
+        
+        .footer-per-se h3{
+            margin-top: 100px;
+            margin-bottom: 10px;
+            color: rgb(87, 45, 240);
+        }
+        
+        .segundo-p{
+            margin-top: 25px;
+        }
+
+        .seccion {
+            display: none;
+        }
+
+        .boxes {
+            width: 75%;
+            height: 200px;
+            text-align: center;
+            overflow: hidden;
+            margin: 3px;
+            border-radius: 10px;
+            background-color:rgb(130, 121, 136);
+            margin-left: auto;
+            margin-top: auto;      
+        }
+
+    
+        .containers img {
+            width: 100%;
+            height: 100px;
+        }
+
+        .containers {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        
+        }
+
+        .boxes .parrafo {
+            margin-top: 20px;
+            background-color: rgb(82, 79, 241);
+            border-radius: 6px;
+            padding: 0;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+        .boxes .parrafo a {
+            color:rgb(214, 203, 228);
+            text-decoration: none;
+        }
+
+
+     
+        
+        .el-footer {
+            width: 100%;
+            height: 100px;
+            background: #b0b1e7;
+        }
+
+
+        .footer-per-se{
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: auto;
+            
+        }
+
+        .footer-per-se h3{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: rgb(87, 45, 240);
+        }
+
+        .segundo-p{
+            margin-top: 5px;
+        }
+    }
+
+
+/* ------------------------- DESKTOP -------------------------------------------- */ 
+
+
+@media screen and (max-width: 3500px) and (min-width: 1000px) {
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 
 
 body {
@@ -10,6 +587,7 @@ body {
 
     background-color: #F6F8EB;
 }
+
 
 #menu {
     display: flex;
@@ -36,7 +614,7 @@ body {
 }
 
 #menu ul li a:hover{
-    color: #60A9FC;
+    color: #7117e7;
     transition: 0.5s;
     
 }
@@ -61,7 +639,7 @@ body {
     background-image: url(../imagenes/boston_foto.jpeg);
     background-repeat: no-repeat;
     height: 750px;
-    width: 700%;
+    width: 100%;
     opacity: 0.9;
     overflow: hidden;
 
@@ -158,40 +736,37 @@ body {
     justify-content: center;
 }
 
-.contenedor-hoteles{
-    background-image: url(../imagenes/hotel.png);
-    width: 200px;
-    height: 200px;
-    margin: 30px;
-    justify-content: center;
-    border-radius: 30px;
-    overflow: hidden;
-}
+/* sección de las guías */
     
 .seccionGuia {
     margin: 70px, 0, 70px, 0;
     display: block;
 
 }
-.seccionGuiacontenedor2 {
-    justify-content: center;
-
+.contenedor-guias {
+  display: flex;
+  justify-content: center;
 }
-.seccionGuiacontenedor2 img {
-    width: 300px;
-    height: 300px;
+.contenedor-guias img {
+    width: 200px;
+    height: 200px;
     border-radius: 14px;
+    margin-left: 20px;
+    margin-left: 20px;
 }
 
-.derecha {
+ .caja {
     display: flex;
 }
 
 .guias {
     position: relative;
-    width: 360px;
+    width: 300px;
     margin: 40px 30px 40px 30px;
-
+    padding: 30px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .overlay {
@@ -212,6 +787,8 @@ body {
     height: 40%;
     width: 300px;
 }
+
+
 .text {
 color: #FFFFFF;
 position: absolute;
@@ -230,6 +807,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     font-size: 30px;
+    margin-bottom: 40px;
 }
 
 .info {
@@ -261,7 +839,6 @@ text-align: center;
 }
 
 .contenedor-excursiones{
-    background-image: url(../imagenes/excursiones.jpg);
     width: 270px;
     height: 270px;
     margin: 30px;
@@ -275,7 +852,6 @@ text-align: center;
 
 
 .contenedor-gastronomía{
-    background-image: url(../imagenes/restaurante.jpg);
     opacity: 0.9;
     width: 270px;
     height: 270px;
@@ -289,7 +865,6 @@ text-align: center;
 }
 
 .contenedor-paquetes{
-    background-image: url(../imagenes/beacon_hill2.jpg);
     opacity: 0.9;
     width: 270px;
     height: 270px;
@@ -318,7 +893,7 @@ text-align: center;
 .el-footer {
     width: 100%;
     height: 200px;
-    background: #242582;
+    background: #b0b1e7;
 }
 
 
@@ -333,9 +908,245 @@ text-align: center;
 .footer-per-se h3{
     margin-top: 100px;
     margin-bottom: 10px;
-    color: rgb(241, 86, 80);
+    color: rgb(87, 45, 240);
 }
 
 .segundo-p{
     margin-top: 25px;
 }
+
+.seccion-mobile {
+    display: none;
+}
+
+.seccionGuia{
+    display: none;
+}
+
+}
+
+
+/* --------------------------------------- TABLET -------------------------------------- */
+
+
+@media screen and (max-width: 800px) and (min-width: 480px) {
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
+    body {
+        font-family: 'Didact Gothic', sans-serif;
+    
+        background-color: #F6F8EB;
+    }
+    
+    #menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        flex-basis: 100px;
+        background-color:#F6F8EB;
+    
+    }
+    
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #menu ul li {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        flex-basis: 100px;
+        background-color: #F6F8EB;
+    }
+    
+    #menu ul li a {
+        display: block;
+        color: #000000;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+        
+    .portada {
+    background-image: url(../imagenes/boston_foto.jpeg);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    opacity: 0.9;
+    overflow: hidden;
+    }
+   
+    .portada h1 {
+        position: absolute;
+        margin-bottom: 5px;
+        margin-top: 200px;
+        left:300px;
+        font-size: 50px;
+        font-family: 'Didact Gothic', sans-serif;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    
+    }
+  
+    .explora {
+        width:100%;
+        max-width: 580px;
+        margin:auto;
+        padding: 60px;
+        margin-top: 100px;
+        border-top: 2px solid #171E45;
+    }
+    
+    .titulo-explora{
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .explora img{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    
+    }
+    
+    .explora p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+
+    .box {
+       display: none;
+    
+    }
+    
+
+    
+    .contenedor-mapa{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ------------- sección explorá la ciudad  mobile ------------- */
+
+    .seccionGuia {
+        display: none;
+    
+    }
+    
+    
+    
+    .el-footer {
+        width: 100%;
+        height: 200px;
+        background: #b0b1e7;
+    }
+    
+    
+    .footer-per-se{
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+    
+    .footer-per-se h3{
+        margin-top: 100px;
+        margin-bottom: 10px;
+        color: rgb(87, 45, 240);
+    }
+    
+    .segundo-p{
+        margin-top: 25px;
+    }
+
+    .seccion {
+        display: none;
+    }
+
+    .boxes {
+        width: 75%;
+        height: 200px;
+        text-align: center;
+        overflow: hidden;
+        margin: 3px;
+        border-radius: 10px;
+        background-color:rgb(193, 166, 255);
+        margin-left: auto;
+        margin-top: auto;      
+    }
+
+
+    .containers img {
+        width: 100%;
+        height: 100px;
+    }
+
+    .containers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    
+    }
+
+    .boxes .parrafo {
+        margin-top: 20px;
+        background-color: rgb(82, 79, 241);
+        border-radius: 6px;
+        padding: 0;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    .boxes .parrafo a {
+        color:rgb(214, 203, 228);
+        text-decoration: none;
+    }
+
+
+ 
+    
+    .el-footer {
+        width: 100%;
+        height: 100px;
+        background: #b0b1e7;
+    }
+
+
+    .footer-per-se{
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+
+    .footer-per-se h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: rgb(87, 45, 240);
+    }
+
+    .segundo-p{
+        margin-top: 5px;
+    }
+}
+
